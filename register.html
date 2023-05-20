@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: greenyellow;
+            color: white;
+            font-size: 20px;
+            height: 30vh;
+            line-height: 50px;
+            text-align: center;
+        }
+        .img_deg{
+            float: left;
+            background-color: greenyellow;
+            width: 113px;
+            height: 113px;
+            border: 4px solid greenyellow;
+           border-radius: 70px;
+           margin-left: 10px;
+        }
+       .image{
+        float: right;
+        background-color: greenyellow;
+            width: 113px;
+            height: 113px;
+            border: 4px solid greenyellow;
+           border-radius: 100px;
+           margin-right: 10px;
+       }
+        header {
+            margin-top: 6px;
+        }
+
+        .box2 {
+            background-color: yellow;
+            max-width: 700px;
+            margin: auto;
+            border: 0cap;
+            border: 4px solid greenyellow;
+        }
+
+        h1 {
+            font-style: italic;
+            color: green;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        nav {
+            margin: 40px;
+            color: black;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left {
+            
+            background-color: blanchedalmond;
+            height: 45vh;
+            width: 12vw;
+            border: 2px solid black;
+            float: left;
+            position: fixed;
+        }
+
+        .left ul li a {
+            margin-left: 8px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right {
+
+            float: right;
+            /* display: inline-block; */
+            background-color:paleturquoise;
+            height: 45vh;
+            width: 1792px;
+            border: 2px solid paleturquoise;
+
+           
+        }
+        .right h1{
+           
+            margin-top: 0px;
+            color: purple;
+            font-family: 'Tillana', cursive;
+            /* font-size: 15px; */
+            margin-bottom: 20px;
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+
+        }
+        @keyframes widthAnimate {
+            from{
+                width: 50vw;
+            }
+            to{
+                width: 100vw;
+            }
+        }
+
+        form{
+            margin-top: 0px;
+        }
+         form h2{
+         font-size: 23px;
+            display: inline;
+        margin-bottom: 13px;
+        }
+         form h3{
+            display: inline;
+            font-size: 23px;
+            margin-bottom: 34px;
+          
+        }
+        form h4{
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+         form h5{
+            font-size: 23px;
+            margin-top: 13px;
+        }
+         form h6{
+            font-size: 23px;
+            margin-top: 13px;
+        }
+         
+        button{
+           font-size: 15px;
+           padding: 8px;
+           border-radius: 8px;
+           margin: 15px;
+           margin-top: 8px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="box1">
+        <img class="img_deg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAsySFS4pz9osFTUnCprKj5vRgROBy_DR_uxdByp-caQ&s" alt="">
+
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxgPyJ3nHNE2XD8py7IIfgONjr-4EWe0ivg&usqp=CAU" alt="">
+        
+    <div class="box2">
+        <h1><b>Online Book Store</b></h1>
+    </div>
+    Created & Maintained By MRCET
+
+    <nav>
+        <a href="index.html"> HOME</a>
+            <a href="login.html"> LOGIN</a>
+            <a href="register.html">REGISTER</a>
+            <a href="catalogue.html">CATALOGUE</a>
+    </nav>
+
+</div>
+
+<div class="left">
+    <ul>
+        <li>
+            <a href="cse.html">CSE</a><br>
+            <a href="ece.html">ECE</a><br>
+            <a href="eee.html">EEE</a><br>
+            <a href="mech.html">MECH</a>
+        </li>
+    </ul>
+</div>
+<div class="right">
+    
+    <h1>Registration Form </h1><hr>
+    <form action="form.php">
+        <div><h2>First Name(Minimum 6 characters)* <input type="text" placeholder="         "></h2> </div><br>
+
+       <div><h3> Last Name* <input type="text" placeholder="           "></h3></div><br>
+
+        <div> <h4>Email Address* <input type="text"placeholder="    "> </div></h4> 
+
+         <p>(one e-mail id only): <a href="">e.g.smith@hotmail.com</a> </p>
+
+         <div><h5>Password (minimum 6 characters)* <input type="text"placeholder="     " ></h5></div>
+
+        <div> <h5>Address* <input type="text"placeholder="     " ></h5></div>
+
+        <h5> Mobile No* <input type="text" placeholder="    "></h5>
+        <h6><label for="section idb">
+            Gender:  <input type="radio" value="section b" name="section" id="sectionidb">male  
+        </label>
+        <label for="sectionida">
+            <input type="radio" value="section a" name="section" id="sectionida">female
+        </label>
+    </h6>
+        </select>
+    </form>
+   
+    <button> <a href="thanks.html">Submit</a>
+    </button>
+    <button>Reset</button>
+   
+</div>
+
+
+    
+</body>
+</html>

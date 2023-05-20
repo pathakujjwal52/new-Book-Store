@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cse page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: greenyellow;
+            color: white;
+            font-size: 20px;
+            height: 30vh;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 6px;
+        }
+
+        .box2 {
+            background-color: yellow;
+            max-width: 700px;
+            margin: auto;
+            border: 0cap;
+            border: 4px solid greenyellow;
+        }
+        .img_deg{
+            float: left;
+            background-color: greenyellow;
+            width: 113px;
+            height: 113px;
+            border: 4px solid greenyellow;
+           border-radius: 70px;
+           margin-left: 10px;
+        }
+       .image{
+        float: right;
+        background-color: greenyellow;
+            width: 113px;
+            height: 113px;
+            border: 4px solid greenyellow;
+           border-radius: 100px;
+           margin-right: 10px;
+       }
+
+        h1 {
+            font-style: italic;
+            color: green;
+            text-align: center;
+        }
+
+        nav {
+            margin: 40px;
+            color: black;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left {
+            /* margin-top: 5px; */
+            /* display: inline-block; */
+            background-color: blanchedalmond;
+            height: 40vh;
+            width: 12vw;
+            border: 2px solid black;
+            float: left;
+            position: fixed;
+        }
+
+        .left ul li a {
+            margin-left: 8px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right {
+
+            float: right;
+            /* display: inline-block; */
+            background-color: skyblue;
+            height: 40vh;
+            width: 1799px;
+            border: 2px solid black;
+
+           
+        }
+        .right h1 {
+            margin-top: 12px;
+            color: blue;
+            
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        center{
+            margin-top: 7px;
+        }
+        center form p{
+         font-size: 23px;
+            display: inline;
+        
+        }
+        center form h2{
+            display: inline;
+          font-size: 20px;
+        }
+        center form h3{
+            font-size: 20px;
+        }
+        button{
+           font-size: 17px;
+           padding: 10px;
+           border-radius: 10px;
+           margin: 20px;
+        }
+        .myDiv{
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img class="img_deg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAsySFS4pz9osFTUnCprKj5vRgROBy_DR_uxdByp-caQ&s" alt="">
+
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxgPyJ3nHNE2XD8py7IIfgONjr-4EWe0ivg&usqp=CAU" alt="">
+        
+        <div class="box2">
+            <h1><b>Online Book Store</b></h1>
+        </div>
+        Created & Maintained By MRCET
+
+        <nav>
+            <a href="index.html"> HOME</a>
+            <a href="login.html"> LOGIN</a>
+            <a href="register.html">REGISTER</a>
+            <a href="catalogue.html">CATALOGUE</a>
+        </nav>
+
+    </div>
+
+    <div class="left">
+        <ul>
+            <li>
+                <a href="cse.html">CSE</a><br>
+                <a href="ece.html">ECE</a><br>
+                <a href="eee.html">EEE</a><br>
+                <a href="mech.html">MECH</a>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        
+        <h1>Computer Science and Engineering</h1>
+       
+        <center><form action="form.php">
+            <h2>Text Books <select name="car" id="car"><br>
+                <option value="webtechnologies">webtechnology</option>
+                <option value="web design">web design</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React.js">React.js</option>
+                <option value="Learning PHP,MySQL,CSS,HTML">PHP,MySQL,CSS,HTML</option>
+            </select>
+            <!-- <input type="text" placeholder="           "></h2><br> --> 
+
+            <h3>Quantity  <input type="text" placeholder="           "></h3>
+          
+            </center>
+            </select>
+        </form>
+       <div class="myDiv">
+        <button>ok</button>
+        
+        <p>Cost of one book is "500" + shipping "100"</p>
+        </div>
+    </div>
+
+</body>
+</html>
